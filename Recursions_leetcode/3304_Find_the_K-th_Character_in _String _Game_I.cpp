@@ -1,6 +1,6 @@
 class Solution {
 public:
-    string word = "a";
+    char word = 'a';
     char kthCharacter(int k) {
         getword(k);
         return word[k-1];
@@ -8,7 +8,7 @@ public:
     void getword(int k){
         if(k<=1) return;
         else{
-            string temp;
+            char temp;
             int i = 0;
             while(word[i]!='\0'){
                 temp.append(1,word[i]+1);
